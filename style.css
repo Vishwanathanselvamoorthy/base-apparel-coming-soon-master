@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Josefin sans;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .image-container {
+  height: 50%;
+  width: 100%;
+}
+.container .image-container .logo-img {
+  padding: 30px 0px 30px 40px;
+}
+.container .image-container .hero-img {
+  width: 412px;
+}
+
+.container .content-container {
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+}
+.container .content-container h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+  letter-spacing: 10px;
+
+  text-transform: uppercase;
+}
+.container .content-container h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.container .content-container p {
+  letter-spacing: 1px;
+  line-height: 2;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: hsl(0, 36%, 70%);
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.container .content-container input {
+  padding: 25px;
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+  border: 1px solid hsl(0, 36%, 70%);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.container .content-container input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.container .content-container button {
+  padding: 18px 35px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 40px;
+  position: absolute;
+  right: 30px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.container .content-container .arrow-img {
+  width: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+}
