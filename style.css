@@ -55,9 +55,13 @@ body {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.container .content-container .input-container {
+  position: relative;
+  /* background-color: aqua; */
+}
 
 .container .content-container input {
-  padding: 25px;
+  padding: 22px;
   width: 100%;
   border-radius: 40px;
   border: none;
@@ -69,20 +73,65 @@ body {
   color: hsl(0, 36%, 70%);
 }
 .container .content-container button {
-  padding: 18px 35px;
+  padding: 15px 45px;
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 40px;
-  position: absolute;
-  right: 30px;
   border: none;
   margin-top: 30px;
   margin-bottom: 20px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+.container .content-container .error-img {
+  position: absolute;
+  top: 46px;
+  right: 120px;
 }
 .container .content-container .arrow-img {
   width: 15px;
 }
+.desktop-ui {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
+  .desktop-ui {
+    display: inline-block;
+  }
+  .mobile-ui {
+    display: none;
+  }
   .container {
     flex-direction: row-reverse;
+    width: 100%;
+    height: 100vh;
+  }
+  .container .image-container {
+    width: 40%;
+  }
+  .container .image-container .hero-img {
+    width: 100%;
+    height: 100vh;
+  }
+  .container .content-container {
+    width: 60%;
+    height: 100vh;
+
+    margin: 0;
+    /* padding: 100px; */
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: left;
+  }
+  .container .content-container .logo-img {
+    width: 150px;
+    position: absolute;
+    top: 40px;
   }
 }
