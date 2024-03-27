@@ -23,7 +23,7 @@ This project is a responsive landing page for a fashion store, designed to provi
 
 ## Project Link 🔗
 
-[Demo](#) <!-- Replace "#" with your project link -->
+[Demo](https://base-apparel-coming-soon-master-umber.vercel.app/) <!-- Replace "#" with your project link -->
 
 ## Screenshots 📷
 ## Mobile UI:
